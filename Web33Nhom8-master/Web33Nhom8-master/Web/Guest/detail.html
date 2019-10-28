@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Gentlemen's world</title>
+    <meta charset="utf-8">       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,500italic,100italic,100' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="style.css">
+ 
+
+
+    </head>
+
+  <body>
+
+<!-- HEADER MENU  -->
+   <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-2 col-sm-2">
+                     <div class="logo"><a href="index.html"><img src="../media/images/logo.png" alt="Gentlemen Shop"></a></div>
+                  </div>
+                  <div class="col-md-10 col-sm-10">
+                     <div class="header_top">
+                        <div class="row">
+
+
+                           <div class="col-md-6">
+                             <ul class="topmenu">
+                                 <li><a href="about/index.html">About Us</a></li>
+                                 <li><a class="ac-control" href="contact.html">Recruiment</a></li>
+                                 <li><a class="ac-control" href="contact.html">Support</a></li>
+                              </ul>
+                           </div>
+                            <!-- Account control-->
+                           <div class="col-md-4">
+                              <ul class="usermenu" id="um-1">
+                                 <li><a id="user-login" href="#" class="log">Login</a></li>
+                                 <li><a href="#" class="reg">Register</a></li>
+                              </ul>
+                                <ul class="usermenu hidden" id="um-2">
+                               <li><a href="#" id="username" class="log"></a></li>
+                               <li><a href="#" id="userlogout">Logout</a></li>
+                               </ul>
+  
+                           </div>
+                            <div class="col-md-2 hidden" id="um-3">
+                                <div href="#" class="dropdown" id="dw-tool">
+                                 <button class="btn btn-whatever btn-xs dropdown-toggle" type="button" data-toggle="dropdown" id="tool">
+                                <span class="caret"></span></button>
+                                <ul class="dropdown-menu font-yekan" role="menu" aria-labelledby="tool">
+                                <li role="presentation"><a class="glyphicon glyphicon-user" role="menuitem" tabindex="-1" href="#"> Thông tin cá nhân</a></li>
+                                <li role="presentation"><a class="glyphicon glyphicon-book"role="menuitem" tabindex="-1" href="#"> Lịch sử đơn hàng</a></li>   
+                                </ul>
+                                </div>
+                            </div>
+                            <!-- End Account control-->
+                        </div>
+                     </div>
+                     <div class="header_bottom">
+                        <ul class="option">
+                          
+                           <li id="search" class="search">
+                              <form  action="search.html"><input class="search-input" placeholder="Enter your search term..." type="text" value="" name="search">
+                              <input class="search-submit" type="submit" value=""></form>
+                           </li>
+
+
+                           <li class="option-cart">
+                              <a href="cart.html" class="cart-icon">cart <span class="cart_no">02</span></a>
+                              <ul class="option-cart-item">
+                                 <li>
+                                    <div class="cart-item">
+                                       <div class="image"><img src="../media/images/Wine/1.png" alt=""></div>
+                                       <div class="item-description">
+                                          <p class="name">Avalo 2015 Primitivo Di Manduria</p>
+                                          <p>Số lượng: <span class="light-red">02</span></p>
+                                       </div>
+                                       <div class="right">
+                                          <p class="price">$1600</p>
+                                          <a href="#" class="remove"><img src="../media/images/remove.png" alt="remove"></a>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="cart-item">
+                                       <div class="image"><img src="../media/images/Wine/4.png" alt=""></div>
+                                       <div class="item-description">
+                                          <p class="name">Champagne Pháp Deutz Brut Vintage</p>
+                                          <p>Số lượng: <span class="light-red">01</span></p>
+                                       </div>
+                                       <div class="right">
+                                          <p class="price">$450</p>
+                                          <a href="#" class="remove"><img src="../media/images/remove.png" alt="remove"></a>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li><span class="total">Total <strong>$2060</strong></span><button class="checkout" onClick="location.href='checkout.html'">Thanh toán</button></li>
+                              </ul>
+                           </li>
+                        </ul>
+                        <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+                                       <div class="navbar-collapse collapse">
+                           <ul class="nav navbar-nav">
+                              
+                              <li class=""><a href="index.html">Home</a></li>
+                              <li class="dropdown">
+                                 <a href="product.html" class="dropdown-toggle ac-control" data-toggle="dropdown">Rượu Vang</a>
+                                 <div class="dropdown-menu mega-menu">
+                                    <div class="row">
+                                       <div class="col-md-6 col-sm-6">
+                                          <ul class="mega-menu-links">
+                                             <li><a class="ac-control" href="product.html">Vang Italia</a></li>
+                                             <li><a class="ac-control" href="product.html">Vang Chile</a></li>
+                                             <li><a class="ac-control" href="product.html">Vang Pháp</a></li>
+                                             <li><a class="ac-control" href="product.html">Vang Hungaria</a></li>
+                                             <li><a class="ac-control" href="product.html">Vang Austraylia</a></li>
+                                             <li><a class="ac-control" href="product.html">Vang Pháp</a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li><a class="ac-control" href="product.html">Champagnes</a></li>
+                              <li class="dropdown">
+                                 <a href="product.html" class="ac-control dropdown-toggle" data-toggle="dropdown">Whisky</a>
+                                 <div class="dropdown-menu mega-menu">
+                                    <div class="row">
+                                       <div class="col-md-6 col-sm-6">
+                                          <ul class="mega-menu-links">
+                                             <li><a class="ac-control" href="product.html">Ballantine's</a></li>
+                                             <li><a class="ac-control" href="product.html">Chivas</a></li>
+                                             <li><a class="ac-control" href="product.html">Edradour</a></li>
+                                             <li><a class="ac-control" href="product.html">Johnnie Walker</a></li>
+                                             <li><a class="ac-control" href="product.html">Glenfarclas</a></li>
+                                             <li><a class="ac-control" href="product.html">Tomatin</a></li>
+                                             <li><a class="ac-control" href="product.html">Macallan</a></li>
+                                              <li><a class="ac-control" href="product.html">Old Malt Cask</a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li><a class="ac-control" href="product.html">Cognac</a></li>
+                              <li><a class="ac-control" href="product.html">Vodka</a></li>
+                              <li><a href="contact.html">contact us</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="page"></div>
+<!-- HẾT HEADER MENU -->
+
+<!-- PHẦN SẢN PHẨM -->
+     
+    
+
+
+
+
+ <div class="container_fullwidth">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="products-details">
+                <div class ="preview_image">
+                    <img  src="../media/images/Wine/2.png"  alt="" >
+                </div>
+                <div class="products-description">
+                  <h4 class="name">
+                  Celebration LXXIV 2012 Primitivo di Manduria Feudo
+                  </h4>
+                
+                  <p>
+                   <label>Tình trạng:</label>
+                    <span class="light-red">
+                      Còn hàng
+                    </span>
+                    <br>
+            
+                <label>Hãng sản xuất:</label><span > Feudi Salentini S.R.L</span><br>
+                  <label>Loại Rượu:</label><span > Vang</span><br>
+                <label>Dung tích:</label><span > 750ml</span><br>
+                <label>Độ cồn:</label><span > 14.75%</span><br>
+                <span class="glyphicon glyphicon-eye-open"></span>  <label>View:</label><span > 1290</span>
+                  <span class="glyphicon glyphicon-shopping-cart"></span>  <label>Sell:</label><span > 350</span><br> </p>
+
+                  <p>
+                  Rượu được chiết xuất từ giống nho hảo hạng Primitivo di Manduria được lựa chọn kỹ càng sau khi thu hoạch.
+                  </p>
+                  <hr class="border">
+                  <div class="price">
+                    Price : 
+                    <span class="new_price">
+                      450.00
+                      <sup>
+                        $
+                      </sup>
+                    </span>
+                    <span class="old_price">
+                      1997.00
+                      <sup>
+                        $
+                      </sup>
+                    </span>
+                  </div>
+                  <hr class="border">
+                  <div class="wided">
+                    <div class="qty">
+                      Số lượng &nbsp;&nbsp;: 
+                      <select>
+                        <option>
+                          1
+                        </option>
+                      </select>
+                    </div>
+                    <div class="button_group">
+                      <button class="button" >
+                        Thêm Vào Giỏ Hàng
+                      </button>
+                     
+                    </div>
+                  </div>
+ 
+                </div>
+              </div>
+              <div class="clearfix">
+              </div>
+              <div class="tab-box">
+               
+                <div class="tab-content-wrap">
+                  <div class="tab-content" id="Description">
+                    <p>
+                     <b>Rượu Vang đỏ Celebration Feudo Di Santa Croce LXXIV </b> là một trong những chai rượu nổi tiếng được sản xuất tại Ý. Ý – một trong những cái nôi của rượu vang. Đây là quê hương của các dòng vang danh tiếng như Moscato, Chianti, Amarone và Prosecco. Ý sở hữu một nền văn hóa rượu vang đa dạng và phong phú hơn 2000 năm.
+<h3>
+Tổng quan</h3>
+Được chiết xuất từ giống nho hảo hạng Primitivo. Đây là giống nho đến từ nước Ý. Nổi tiếng với mầu vỏ đen chuyên tạo ra các sản phẩm rượu vang có màu sắc và hương vị đậm đà. Các sản phẩm rượu vang từ nho Primitivo thường có độ cồn và hàm lượng tannin cao hơn nhiều so với các giống nho khác.
+<br>
+Với thiết kế đơn giản mà không kém phần sang trọng, chai rượu để lại ấn tượng vô cùng sâu đậm. Chai rượu cùng với nắp màu đen. Nhãn chai màu vàng sang trọng. Trên nhãn in nổi bật dòng chữ LXXIV màu đen.
+<h3>
+Thưởng thức</h3>
+Chai rượu vang Ý này có cấu trúc mượt mà. Với độ cồn 14,5% chai rượu đem lại cảm giác nhẹ nhàng cho người uống. Khi uống ta có thể cảm thấy thơm mùi nước hoa, mận và trái đỏ màu chín.
+<br>
+Khi thưởng thức chai rượu vang này bạn nên dùng ở nhiệt độ 20 oC.  Nên dùng cùng các món thịt cừu, thịt thú rừng với nước sốt hoặc bơ để có thể đem đến hương vị tuyệt vời nhất. Để bảo quản tốt chai rượu, không làm mất mùi vị đặc trưng của nó. Ta cần lưu ý những điều sau. Để tại nơi thoáng mát, khô ráo có nhiệt độ khoảng 20˚C hoặc thấp hơn. Luôn luôn đặt chai ở tư thế nằm, không nên đặt chai thẳng đứng.
+
+                    </p>
+                  
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+<div class="hot-products">
+         <div class=row>
+    <div class=col-md-6>
+                  <h3 class="title">Sản phẩm cùng loại</h3>
+                </div>
+
+    <div class=col-md-6>
+                  <div class="control"><a id="prev_hot" class="prev" href="#">&lt;</a><a id="next_hot" class="next" href="#">&gt;</a></div>
+                </div>
+              </div>
+        
+                  <ul id="hot">
+                     <li>
+                        <div class="row">
+                           <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                          
+                        </div>
+                     </li>
+                     <li>
+                        <div class="row">
+                              <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                   
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+
+
+
+
+
+
+
+
+
+                <div class="newest-products">
+      <div class=row>
+    <div class=col-md-6>
+                  <h3 class="title">Sản phẩm cùng nhà sản xuất</h3>
+                </div>
+
+    <div class=col-md-6>
+                  <div class="control"><a id="prev_newest" class="prev" href="#">&lt;</a><a id="next_newest" class="next" href="#">&gt;</a></div>
+                </div>
+                </div>
+                  <ul id="newest">
+                     <li>
+                        <div class="row">
+                           <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+                            <div class="col-md-3 col-sm-6">
+                              <div class="products">
+                                 <div class="offer">- %20</div>
+                                 <div class="thumbnail"><a href="detail.html"><img src="../media/images/Wine/0.png" alt="Product Name" ></a></div>
+                                 <div class="productname">Chivas 18</div>
+                                 <h4 class="price">$451.00</h4>
+                                 <div class="button_group"><button class="button add-cart" type="button">Thêm Vào Giỏ Hàng</button></div>
+                              </div>
+                           </div>
+
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+<!-- PHẦN FOOTER -->
+
+  <div class="footer">
+            <div class="footer-info">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-3">
+                        <div class="footer-logo"><a href="contact.html"><img src="../media/images/logo.png" alt=""></a></div>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <h4 class="title">Contact <strong>Info</strong></h4>
+                        <p>Trường đại học Khoa Học Tự Nhiên. 227, Nguyễn Văn Cừ, Quận 5, TP Hồ Chí Minh </p>
+                        <p>Call Us : 01237015928</p>
+                        <p>Email : ...@gmail.com</p>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <h4 class="title">Customer<strong> Support</strong></h4>
+                        <ul class="support">
+                           <li><a href="contact.html">FAQ</a></li>
+                           <li><a href="contact.html">Payment Option</a></li>
+                           <li><a href="contact.html">Booking Tips</a></li>
+                           <li><a href="contact.html">Infomation</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-md-3">
+                     
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright-info">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <p>Copyright © 2018. Designed by <a href="contact.html">Gentlemen Team</a>. All rights reseved</p>
+                     </div>
+                     <div class="col-md-6">
+                        <ul class="social-icon">
+                           <li><a href="contact.html" class="facebook"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      <!-- HẾT PHẨN FOOTER -->
+
+<!-- PHẦN SCRIPT -->
+
+
+
+
+
+
+
+<script type="text/javascript" src="../jQuery/jquery-1.12.4.min.js">
+    </script>
+    <script defer src="../jQuery/jquery.flexslider.js">
+    </script>
+        <script type="text/javascript" src="../jQuery/jquery.sequence-min.js">
+    </script>
+
+
+     <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../jQuery/jquery.carouFredSel-6.2.1-packed.js"></script>
+ 	 <script type="text/javascript" src="scripts.js" ></script>
+
+    <!-- HẾT PHẦN SCRIPT -->
+
+
+  </html>

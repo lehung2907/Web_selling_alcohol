@@ -1,0 +1,104 @@
+﻿{{#section 'title'}}
+{{/section}}
+
+{{#if noOders}}
+<div class="row">
+	<div class="col-sm-12 col-md-12 col-lg-12">
+		Không có đơn hàng
+	</div>
+</div>
+{{else}}
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#">
+					<em class="fa fa-home"></em>
+				</a></li>
+				<li class="active">Dashboard/Quản lý đơn hàng</li>
+			</ol>
+		</div><!--/.row-->
+
+		<div class="row" style="border-bottom:1px solid green;">
+			<div class="col-lg-8" >
+				<h1 class="page-header">Quản lý đơn hàng</h1>
+			</div>
+
+            <div class="col-sm-4 col-lg-4">
+                <span style="background-color:white"><b>Chưa giao</b></span>
+                <span style="background-color:#00ff80"><b>Đã Giao</b></span>
+            </div>
+		</div><!--/.row-->
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Mã đơn hàng</th>
+                <th scope="col">Địa chỉ nhận hàng</th>
+                <th scope="col">Ngày đặt hàng</th>
+								<th scope="col">IdUser</th>
+                <th scope="col">Tổng giá trị</th>
+                <th scope="col">Tình trạng</th>
+
+            </tr>
+        </thead>
+        <tbody>
+		{{#each orders}}
+
+            <tr href="javascript:;" class="st_bg" data-status="{{Status}}">
+                <th scope="row">{{OrderID}}</th>
+                <td>{{Adress}}</td>
+                <td id="date">{{OrderDate}}</td>
+                <td>{{UserID}}</td>
+								<td>{{Total}}</td>
+                <td >{{Status}}</td>
+                <td>
+									<a class="btn btn-default btn-xs" href="/admin/quanlydonhang/delete?id={{OrderID}}" role="button">
+										<span class="glyphicon glyphicon-remove"></span>
+									</a>
+									<a class="btn btn-default btn-xs" href="/admin/quanlydonhang/edit?id={{OrderID}}" role="button">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</a>
+                </td>
+            </tr>
+		{{/each}}
+        </tbody>
+    </table>
+		<div class="row">
+	<div class="col-sm-6 col-md-6 col-lg-6">
+		<a class="btn btn-success" href="/admin/quanlydonhang/add" role="button">
+			<span class="glyphicon glyphicon-plus"></span>
+			Add
+		</a>
+	</div>
+</div>
+
+</div>
+<ul class="pagination">
+	<li><a href="#">&laquo;</a></li>
+	{{#each page_numbers}}
+		{{#if isCurrentPage}}
+		<li class="active"><a href="javascript:;">{{value}}</a></li>
+		{{else}}
+		<li><a href="?page={{value}}">{{value}}</a></li>
+		{{/if}}
+	{{/each}}
+	<li><a href="#">&raquo;</a></li>
+</ul>
+{{/if}}
+
+{{#section 'js'}}
+	<script type="text/javascript">
+
+$('.st_bg').each(function(){
+	if($(this).data('status') == "0")
+	{
+		this.style.background = "white";
+	}
+	else if ($(this).data('status') == "1")
+	{
+		this.style.background = "#00ff80";
+	}
+});
+
+
+	</script>
+{{/section}}

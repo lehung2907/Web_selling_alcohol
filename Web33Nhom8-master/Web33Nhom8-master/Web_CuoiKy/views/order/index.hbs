@@ -1,0 +1,91 @@
+
+      <div class="container_fullwidth">
+        <div class="container shopping-cart">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="title">
+                Danh sách đơn hàng
+              </h3>
+              <div class="clearfix">
+              </div>
+    {{#if orders}}
+              <table class="order-table">
+                <thead>
+                  <tr>
+                    <th>
+                      Ngày đặt
+                    </th>
+                    <th>
+                     Địa chỉ nhận hàng
+                    </th>
+                    <th>
+                      Tổng tiền
+                    </th>
+                    <th>
+                      Trạng thái
+                    </th>
+                     <th>
+                      Xem chi tiết
+                    </th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+
+{{#each orders}}
+   
+                  <tr >
+                    <td>
+                    {{OrderDate}}
+
+                    </td>
+
+                       <td>
+                        {{Adress}}
+                    </td>
+                    
+                     <td>
+                        {{Total}}
+                    </td>
+                    {{#if Status}}
+                     <td style="color:green;">
+                        Đã nhận hàng
+                    </td>
+                     {{else}}
+                     <td style="color:red;">
+                  
+                        Chưa nhận hàng
+                    </td>
+                    {{/if}}
+                  <td >
+                  <a href="order/detail/{{OrderID}}" class="btn btn-info" role="button">Xem chi tiết</a>
+                       </a>
+                    </td>
+                  </tr>
+              
+  {{/each}}
+
+                </tbody>
+
+
+
+
+
+
+
+
+               
+              </table>
+  {{else}}
+<div class="row">
+  <div style="text-align:center;margin-top: 100px; margin-bottom:150px;" class="col-sm-12 col-md-12 col-lg-12">
+   <h1> Đơn hàng trống</h1>
+  </div>
+</div>
+  {{/if}} 
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
